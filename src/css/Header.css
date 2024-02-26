@@ -1,0 +1,131 @@
+:root {
+  --info: #00bfff;
+}
+.logo {
+  margin-left: -60px;
+}
+@media (max-width: 576px) {
+  .logo {
+    margin-left: 0;
+  }
+}
+.bg-primary {
+  background-color: var(--pink) !important;
+}
+.Heading {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar {
+  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+  padding: 1px;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+.nav-item {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 992px) {
+  .nav-item {
+    border-bottom: none;
+  }
+}
+.dropdown-mega .dropdown-menu {
+  width: 100%;
+}
+.dropdown-mega .h5 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 0;
+}
+.dropdown-mega .list-group-item {
+  font-size: 1rem;
+  color: #3f3b51;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 12px 0;
+}
+.dropdown-mega .list-group-item:hover {
+  color: #0000ff;
+}
+.search-bar {
+  position: relative;
+}
+.search-box {
+  position: absolute;
+  top: 100%;
+  right: -27px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  padding: 8px;
+  display: none;
+}
+.search-bar:hover .search-box {
+  display: block;
+  z-index: 999;
+}
+.cart-count {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 16px;
+  visibility: hidden;
+}
+.cart-count:not(:empty) {
+  visibility: visible;
+}
+.navbar-brand {
+  margin-left: 55px;
+}
+@media (max-width: 567px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+}
+.fa-user {
+  color: #eeeeee;
+}
+.fa-shopping-cart {
+  color: #eeeeee;
+}
+.fa-search {
+  color: #eeeeee;
+}
+.user-bar {
+  position: relative;
+}
+.user-bar:hover .wrapper-user {
+  display: block;
+}
+.wrapper-user {
+  position: absolute;
+  top: 50px;
+  right: -45px;
+  width: 130px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  padding: 5px 1px;
+  display: none;
+}
+.wrapper-user a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper-user a:hover {
+  color: red;
+  transition: ease-in;
+}

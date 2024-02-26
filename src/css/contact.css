@@ -1,0 +1,50 @@
+/* doan code 2  */
+ul.nav-product {
+  display: flex;
+}
+ul.nav-product li {
+  list-style: none;
+  padding: 5px;
+  margin-top: 10px;
+}
+ul.nav-product li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-product li + li::before {
+  content: "/\00a0";
+  padding: 2px;
+  color: #3f3b51;
+}
+/* ---- */
+.text-contact {
+  font-weight: 700;
+}
+.span-item {
+  background-color: #fff;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+}
+.input-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  outline: 0;
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  height: 153px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: 0;
+}
+.btn-contact {
+  padding: 7px 15px;
+  border: 0;
+  outline: 0;
+  background-color: #333;
+  color: white;
+  width: auto;
+  margin-top: 10px;
+}

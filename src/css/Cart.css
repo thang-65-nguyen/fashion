@@ -1,0 +1,136 @@
+ul.nav-product-cart {
+  display: flex;
+}
+ul.nav-product-cart li {
+  list-style: none;
+  padding: 5px;
+  margin-top: 10px;
+}
+ul.nav-product-cart li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-product-cart li + li::before {
+  content: "/\00a0";
+  padding: 2px;
+  color: #3f3b51;
+}
+/* ... */
+.btn-primary-cart {
+  color: #212529;
+  background-color: #ffd333;
+  border-color: #ffd333;
+}
+.table .thead-dark th {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #454d55;
+  padding: 10px;
+}
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+.table > thead {
+  vertical-align: bottom;
+}
+.align-middle {
+  vertical-align: middle !important;
+}
+.input-group > .form-control-cart {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+  margin-bottom: 0;
+}
+.input-group-append {
+  margin-left: -1px;
+}
+.btn.btn-primary {
+  color: #3d464d !important;
+}
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+.table-borderless > :not(caption) > * > * {
+  border-bottom-width: 0;
+}
+.table-light td {
+  border-color: white;
+}
+.table-borderless td {
+  border: 0;
+}
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.table.table-borderless thead tr {
+  border-bottom: 15px solid #f5f5f5;
+}
+.p-30 {
+  padding: 30px;
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-primary {
+  color: #212529;
+  background-color: #ffd333;
+  border-color: #ffd333;
+}
+.btn-primary-cart:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+.pr-3,
+.px-3 {
+  padding-right: 1rem !important;
+}
+.bg-secondary-cart {
+  background-color: #f5f5f5 !important;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
+.tieude {
+  font-size: 20px;
+}
+
+h5 {
+  font-weight: 500 !important;
+}
+/* --------- */
+.cart_input {
+  width: 10%;
+  text-align: center;
+  outline: 0;
+  border: 0;
+}
+.minus , .plus {
+  width: 10%;
+  border: 0;
+  padding: 10;
+}

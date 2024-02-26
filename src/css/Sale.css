@@ -1,0 +1,147 @@
+/* doan code 2  */
+ul.nav-product {
+  display: flex;
+}
+ul.nav-product li {
+  list-style: none;
+  padding: 5px;
+  margin-top: 10px;
+}
+ul.nav-product li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-product li + li::before {
+  content: "/\00a0";
+  padding: 2px;
+  color: #3f3b51;
+} /* đoạn code 3 */
+.main-wrapper {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+.vien {
+  margin-bottom: 15px;
+  position: relative;
+  text-align: center;
+}
+.title {
+  display: inline-block;
+  background: #fff;
+  padding: 0 15px;
+}
+
+.title h3 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 28px;
+}
+.vien .title h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  color: black;
+  z-index: -1;
+}
+.vien .title h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  z-index: -1;
+}
+
+.product {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 6px 12px -7px rgba(171, 171, 171, 1);
+  transition: box-shadow 0.4s ease-out;
+  position: relative;
+}
+.product:hover {
+  box-shadow: 0 10px 12px -7px rgba(171, 171, 171, 1);
+}
+.product-img img {
+  width: 100%;
+}
+.product-img .rear-img {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 0.4s ease-out;
+}
+.product:hover .rear-img {
+  opacity: 1;
+  z-index: 0;
+}
+.product-info {
+  padding: 1.2rem 1.2rem 2rem;
+  text-align: center;
+}
+.product-info div {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.product-name {
+  font-weight: 600;
+  font-size: 1.2rem !important;
+}
+.product-price {
+  color: #868686;
+}
+.product-btn {
+  background-color: #f65f52;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 0.5rem 1.8rem;
+  border-radius: 1.2rem;
+  transition: background-color 0.5s ease-out;
+}
+.product-btn:hover {
+  background-color: #f50e45;
+  color: white;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 1.4rem;
+}
+@media (max-width: 600px) {
+  .product-grid {
+    display: block;
+  }
+  .product {
+    margin-top: 20px;
+  }
+}
+.product-percent {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #ff0000;
+  border-radius: 50%;
+  height: 40px;
+  width: 38px;
+  font-size: 14px;
+  padding: 10px 5px;
+  color: #fff;
+}
